@@ -1,0 +1,765 @@
+{
+  "firstLayout": "",
+  "gdVersion": {
+    "build": 99,
+    "major": 4,
+    "minor": 0,
+    "revision": 0
+  },
+  "properties": {
+    "adaptGameResolutionAtRuntime": true,
+    "folderProject": true,
+    "orientation": "landscape",
+    "packageName": "com.example.gamename",
+    "pixelsRounding": true,
+    "projectUuid": "cab421a1-a4e1-4a95-9496-6fc9b0f36fab",
+    "scaleMode": "nearest",
+    "sizeOnStartupMode": "adaptWidth",
+    "templateSlug": "",
+    "useExternalSourceFiles": false,
+    "version": "1.0.0",
+    "name": "Paper Engine Development",
+    "description": "",
+    "author": "",
+    "windowWidth": 1280,
+    "windowHeight": 720,
+    "latestCompilationDirectory": "",
+    "maxFPS": 60,
+    "minFPS": 30,
+    "verticalSync": false,
+    "platformSpecificAssets": {},
+    "loadingScreen": {
+      "backgroundColor": 0,
+      "backgroundFadeInDuration": 0.2,
+      "backgroundImageResourceName": "",
+      "gdevelopLogoStyle": "light",
+      "logoAndProgressFadeInDuration": 0.2,
+      "logoAndProgressLogoFadeInDelay": 0.2,
+      "minDuration": 1.5,
+      "progressBarColor": 16777215,
+      "progressBarHeight": 20,
+      "progressBarMaxWidth": 200,
+      "progressBarMinWidth": 40,
+      "progressBarWidthPercent": 30,
+      "showGDevelopSplash": true,
+      "showProgressBar": true
+    },
+    "watermark": {
+      "placement": "bottom-left",
+      "showWatermark": true
+    },
+    "authorIds": [],
+    "authorUsernames": [],
+    "categories": [],
+    "playableDevices": [],
+    "extensionProperties": [],
+    "platforms": [
+      {
+        "name": "GDevelop JS platform"
+      }
+    ],
+    "currentPlatform": "GDevelop JS platform"
+  },
+  "resources": {
+    "resources": [
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "logo",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "logo2",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/logo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\logo.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_logo.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "assets\\logo",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/assets_logo.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\assets_logo.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Coin_01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Coin_01.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Coin_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Coin_02.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Coin_03.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Coin_03.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Coin_04.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Coin_04.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Coin_05.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Coin_05.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Coin_06.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Coin_06.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ground_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ground_02.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ground_04.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ground_04.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ground_09.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ground_09.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ground_13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ground_13.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ground_06.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ground_06.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ground_08.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ground_08.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ground_062.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ground_062.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/wall2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "wall2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Idle_000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Idle_000.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Idle_001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Idle_001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Idle_002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Idle_002.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Idle_003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Idle_003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Idle_004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Idle_004.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Idle_005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Idle_005.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Idle_006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Idle_006.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Idle_007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Idle_007.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Idle_008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Idle_008.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Idle_009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Idle_009.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Idle_010.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Idle_010.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Idle_011.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Idle_011.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_000.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_001.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_004.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_005.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_006.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_007.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_008.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_009.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_010.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_010.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_011.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_011.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_012.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_012.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_013.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_013.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_014.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_014.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_015.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_015.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_016.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_016.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Walking_017.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Walking_017.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Attacking_000.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Attacking_000.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Attacking_001.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Attacking_001.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Attacking_002.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Attacking_002.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Attacking_003.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Attacking_003.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Attacking_004.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Attacking_004.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Attacking_005.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Attacking_005.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Attacking_006.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Attacking_006.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Attacking_007.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Attacking_007.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Attacking_008.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Attacking_008.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Attacking_009.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Attacking_009.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Attacking_010.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Attacking_010.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Minotaur_01_Attacking_011.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Minotaur_01_Attacking_011.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/collider.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "collider",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Wooden_Barrel.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wooden_Barrel.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Wooden_Box.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wooden_Box.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Wooden_Box2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wooden_Box2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Bonus.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bonus.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Bonus2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Bonus2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ladder.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ladder.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Decor_Plant.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Decor_Plant.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Grass_02.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Grass_02.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Rock_01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Rock_01.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Sign_01.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Sign_01.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Spikes.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Spikes.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Ground_063.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Ground_063.png",
+        "smoothed": false,
+        "userAdded": true
+      }
+    ],
+    "resourceFolders": []
+  },
+  "objects": [],
+  "objectsGroups": [],
+  "variables": [],
+  "layouts": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/game"
+    }
+  ],
+  "externalEvents": [],
+  "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/mousepointerlock"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/paperengine"
+    }
+  ],
+  "externalLayouts": [],
+  "externalSourceFiles": []
+}
