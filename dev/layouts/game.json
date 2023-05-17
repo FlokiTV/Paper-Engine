@@ -2355,18 +2355,10 @@
       "effects": [],
       "behaviors": [
         {
-          "name": "Collision",
-          "type": "PaperEngine::Collision"
-        },
-        {
           "name": "Project",
           "type": "PaperEngine::Project",
           "Axis": "X",
           "Follow": false
-        },
-        {
-          "name": "XYSort",
-          "type": "PaperEngine::XYSort"
         }
       ],
       "animations": [
@@ -2560,10 +2552,6 @@
           "type": "PaperEngine::Project",
           "Axis": "X",
           "Follow": true
-        },
-        {
-          "name": "XYSort",
-          "type": "PaperEngine::XYSort"
         }
       ],
       "animations": [
@@ -4510,10 +4498,6 @@
     }
   ],
   "behaviorsSharedData": [
-    {
-      "name": "Collision",
-      "type": "PaperEngine::Collision"
-    },
     {
       "name": "Project",
       "type": "PaperEngine::Project"

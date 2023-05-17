@@ -70,6 +70,33 @@
             "            return -gdjs.toRad(cameraAngle + angle - 270)\r",
             "        if (quad === 3)\r",
             "            return -gdjs.toRad(cameraAngle + angle - 90)\r",
+            "    },\r",
+            "    setXYSort: (obj) => {\r",
+            "        // let _o = objects[0]                    // GD object\r",
+            "        // let __o = _o.getRendererObject()        // Pixi Object\r",
+            "        let layer = runtimeScene.getLayer()\r",
+            "\r",
+            "        let r = 2000\r",
+            "        let rotation = layer.getCameraRotation() + 90\r",
+            "        let rot = gdjs.toRad(rotation)\r",
+            "\r",
+            "        let dx = r * Math.cos(rot);\r",
+            "        let dy = r * Math.sin(rot);\r",
+            "        // let obj = objects[0]\r",
+            "\r",
+            "        let x2 = layer.getCameraX() + dx\r",
+            "        let y2 = layer.getCameraY() + dy\r",
+            "        let z = obj.getVariables().get(\"z\").getValue()\r",
+            "        let offz = obj.getVariables().get(\"offsetZ\").getAsNumber()\r",
+            "        let rmZ = parseFloat(z + offz) || 0\r",
+            "        // console.log(obj.getVariables().get(\"offsetZ\").getAsNumber())\r",
+            "        //remove z\r",
+            "        let distance = obj.getDistanceToPosition(x2, y2) + rmZ\r",
+            "\r",
+            "        let x = obj.getXFromAngleAndDistance(rotation, obj.getHeight() / 2) - x2\r",
+            "        let y = obj.getYFromAngleAndDistance(rotation, obj.getHeight() / 2) - y2\r",
+            "        let dis = Math.sqrt(x * x + y * y)\r",
+            "        obj.setZOrder((dis * -1) + rmZ)\r",
             "    }\r",
             "}"
           ],
@@ -1134,6 +1161,17 @@
           "sentence": "",
           "events": [
             {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let obj = objects[0]",
+                "gdjs.PaperEngine.setXYSort(obj)"
+              ],
+              "parameterObjects": "Object",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            },
+            {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2535,6 +2573,7 @@
               "type": "BuiltinCommonInstructions::JsCode",
               "inlineCode": [
                 "let obj = objects[0]",
+                "gdjs.PaperEngine.setXYSort(obj)",
                 "if (!obj.getVariables().has(\"x\")) {",
                 "    obj.getVariables().get(\"x\").setNumber(obj.getCenterXInScene())",
                 "    obj.getVariables().get(\"y\").setNumber(obj.getCenterYInScene())",
