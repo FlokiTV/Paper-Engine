@@ -15,7 +15,7 @@ To load the extension in gdevelop :
  2. click on "create a new or search for new extensions"
  3. click on "load extension"
  4. select the extension "PaperEngine.json"
- 
+
 ![how to install](https://i.imgur.com/OzQMsuI.gif)
 
 ## Before Starting
@@ -23,7 +23,7 @@ To load the extension in gdevelop :
 ### Environment
 
 The environment in the paper engine is not 3D. The technique used to simulate the environment is just changes in scale and skew of objects.
-Automatically the entire scene is scaled in half to give the feel of an isometric map. There are two types of objects, **tiles** and **plans** by default
+Automatically the entire scene is scaled in half to give the feel of an isometric map. There are two types of objects, **tiles** and **planes** by default
 
 ##### All extension objects are positioned based on the values of the X, Y and Z variables
 
