@@ -736,6 +736,798 @@
         "name": "Ground_063.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\0.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\1.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\3.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\4.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\5.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\9.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\10.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\11.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\12.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\13.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\14.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "duck/15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "duck\\15.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/0.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\0.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\1.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\2.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\3.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/4.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\4.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/5.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\5.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/6.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\6.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/7.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\7.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/8.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\8.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/9.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\9.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/10.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\10.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/11.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\11.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/12.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\12.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/13.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\13.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/14.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\14.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/15.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\15.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/16.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\16.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/17.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\17.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/18.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\18.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/19.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\19.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/20.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\20.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/21.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\21.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/22.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\22.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/23.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\23.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/24.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\24.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/25.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\25.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/26.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\26.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/27.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\27.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/28.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\28.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/29.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\29.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/30.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\30.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/31.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\31.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/32.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\32.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/33.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\33.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/34.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\34.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/35.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\35.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/36.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\36.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/37.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\37.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/38.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\38.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/39.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\39.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/40.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\40.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/41.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\41.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/42.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\42.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/43.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\43.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/44.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\44.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/45.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\45.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/46.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\46.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/47.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\47.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/48.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\48.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/49.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\49.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/50.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\50.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/51.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\51.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/52.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\52.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/53.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\53.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/54.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\54.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/55.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\55.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/56.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\56.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/57.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\57.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/58.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\58.png",
+        "smoothed": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/59.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\59.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/60.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\60.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/61.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\61.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/62.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\62.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/duck/63.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\duck\\63.png",
+        "smoothed": false,
+        "userAdded": true
       }
     ],
     "resourceFolders": []

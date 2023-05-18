@@ -692,7 +692,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.2,
         "snap": true,
-        "zoomFactor": 3.278333865379513,
+        "zoomFactor": 2.7773965524835527,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -2292,7 +2292,7 @@
                 "        let z = obj.getVariables().get(\"z\").getValue()\r",
                 "        let offz = obj.getVariables().get(\"offsetZ\").getAsNumber()\r",
                 "        let rmZ = parseFloat(z + offz) || 0\r",
-                "        // console.log(obj.getVariables().get(\"offsetZ\").getAsNumber())\r",
+                "        \r",
                 "        //remove z\r",
                 "        let distance = obj.getDistanceToPosition(x2, y2) + rmZ\r",
                 "\r",

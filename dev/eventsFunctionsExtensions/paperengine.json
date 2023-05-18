@@ -149,7 +149,7 @@
           ],
           "parameterObjects": "",
           "useStrict": true,
-          "eventsSheetExpanded": false
+          "eventsSheetExpanded": true
         }
       ],
       "parameters": [],
@@ -2697,6 +2697,99 @@
         }
       ],
       "propertyDescriptors": [],
+      "sharedPropertyDescriptors": []
+    },
+    {
+      "description": "",
+      "fullName": "",
+      "name": "ProjectPreRenderSprite",
+      "objectType": "Sprite",
+      "eventsFunctions": [
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "doStepPreEvents",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PauseAnimation"
+                  },
+                  "parameters": [
+                    "Object"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let obj = objects[0]",
+                "let sides = obj.getBehavior(\"ProjectPreRenderSprite\")._behaviorData.Sides",
+                "let size = -(360 / sides)",
+                "let cameraAngle = runtimeScene.getLayer().getCameraRotation()",
+                "cameraAngle = cameraAngle % 360",
+                "cameraAngle = cameraAngle < 0 ? cameraAngle + 360 : cameraAngle //normalize rotation",
+                "let quad = parseInt(cameraAngle % 360 / size)",
+                "cameraAngle = cameraAngle % size",
+                "",
+                "//normalize rotation by quad",
+                "obj.getVariables().get(\"quad\").setNumber(quad ? quad + (sides - 1) : 0)"
+              ],
+              "parameterObjects": "Object",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeSprite"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "Object.Variable(quad)"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "Sprite",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "PaperEngine::ProjectPreRenderSprite",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "propertyDescriptors": [
+        {
+          "value": "0",
+          "type": "Number",
+          "label": "Side count",
+          "description": "Number of sides of the pre-rendered sprite",
+          "group": "",
+          "extraInformation": [],
+          "hidden": false,
+          "name": "Sides"
+        }
+      ],
       "sharedPropertyDescriptors": []
     }
   ],
