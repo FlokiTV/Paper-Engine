@@ -1,6 +1,6 @@
 {
   "author": "",
-  "category": "Advanced",
+  "category": "General",
   "extensionNamespace": "",
   "fullName": "Paper Engine",
   "helpPath": "https://github.com/FlokiTV/Paper-Engine",
@@ -8,7 +8,7 @@
   "name": "PaperEngine",
   "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/70ce666b63361390263144d920b3a5c1ae3972b9a64de7dd4add9ae62f25d68d_note-multiple-outline.svg",
   "shortDescription": "Paper Engine",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Paper Engine",
   "tags": [
     "paper",
@@ -413,10 +413,541 @@
       "objectGroups": []
     },
     {
+      "description": "Change the variables X and Y from object to update the position",
+      "fullName": "Set object position",
+      "functionType": "Action",
+      "group": "Object",
+      "name": "setPosition",
+      "sentence": "Set _PARAM1_ position X:_PARAM2_ Y:_PARAM3_ ",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Object",
+                "x",
+                "=",
+                "GetArgumentAsNumber(\"X\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Object",
+                "y",
+                "=",
+                "GetArgumentAsNumber(\"Y\")"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "Object",
+          "name": "Object",
+          "type": "objectList"
+        },
+        {
+          "description": "X position",
+          "name": "X",
+          "type": "expression"
+        },
+        {
+          "description": "Y position",
+          "name": "Y",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Change the variable angle from object to update the angle",
+      "fullName": "Set object angle",
+      "functionType": "Action",
+      "group": "Object",
+      "name": "setAngle",
+      "sentence": "Set _PARAM1_ angle:_PARAM2_ _PARAM3_ ",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareArgumentAsString"
+              },
+              "parameters": [
+                "\"Operator\"",
+                "=",
+                "\"=\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Object",
+                "angle",
+                "=",
+                "GetArgumentAsNumber(\"Angle\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareArgumentAsString"
+              },
+              "parameters": [
+                "\"Operator\"",
+                "=",
+                "\"+\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Object",
+                "angle",
+                "+",
+                "GetArgumentAsNumber(\"Angle\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareArgumentAsString"
+              },
+              "parameters": [
+                "\"Operator\"",
+                "=",
+                "\"-\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Object",
+                "angle",
+                "-",
+                "GetArgumentAsNumber(\"Angle\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareArgumentAsString"
+              },
+              "parameters": [
+                "\"Operator\"",
+                "=",
+                "\"*\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Object",
+                "angle",
+                "*",
+                "GetArgumentAsNumber(\"Angle\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareArgumentAsString"
+              },
+              "parameters": [
+                "\"Operator\"",
+                "=",
+                "\"/\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Object",
+                "angle",
+                "/",
+                "GetArgumentAsNumber(\"Angle\")"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "Object",
+          "name": "Object",
+          "type": "objectList"
+        },
+        {
+          "description": "Math operator",
+          "name": "Operator",
+          "supplementaryInformation": "[\"=\",\"+\",\"-\",\"*\",\"/\"]",
+          "type": "stringWithSelector"
+        },
+        {
+          "description": "Angle",
+          "name": "Angle",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Change the variable z from object to update the Z axis value",
+      "fullName": "Set object Z axis value",
+      "functionType": "Action",
+      "group": "Object",
+      "name": "setZ",
+      "sentence": "Set _PARAM1_ Z:_PARAM2_ _PARAM3_ ",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareArgumentAsString"
+              },
+              "parameters": [
+                "\"Operator\"",
+                "=",
+                "\"=\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Object",
+                "z",
+                "=",
+                "GetArgumentAsNumber(\"Z\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareArgumentAsString"
+              },
+              "parameters": [
+                "\"Operator\"",
+                "=",
+                "\"+\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Object",
+                "z",
+                "+",
+                "GetArgumentAsNumber(\"Z\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareArgumentAsString"
+              },
+              "parameters": [
+                "\"Operator\"",
+                "=",
+                "\"-\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Object",
+                "z",
+                "-",
+                "GetArgumentAsNumber(\"Z\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareArgumentAsString"
+              },
+              "parameters": [
+                "\"Operator\"",
+                "=",
+                "\"*\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Object",
+                "z",
+                "*",
+                "GetArgumentAsNumber(\"Z\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CompareArgumentAsString"
+              },
+              "parameters": [
+                "\"Operator\"",
+                "=",
+                "\"/\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ModVarObjet"
+              },
+              "parameters": [
+                "Object",
+                "z",
+                "/",
+                "GetArgumentAsNumber(\"Z\")"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "Object",
+          "name": "Object",
+          "type": "objectList"
+        },
+        {
+          "description": "Math operator",
+          "name": "Operator",
+          "supplementaryInformation": "[\"=\",\"+\",\"-\",\"*\",\"/\"]",
+          "type": "stringWithSelector"
+        },
+        {
+          "description": "Z value",
+          "name": "Z",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Set object to a layer. (By number)",
+      "fullName": "Set object layer by number",
+      "functionType": "Action",
+      "group": "Object",
+      "name": "setObjectLayerNumber",
+      "sentence": "Set object: _PARAM1_ to layer number: _PARAM2_ ",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "let obj = objects[0]",
+            "let type = gdjs.PaperEngine.getLayerType(obj.getLayer())",
+            "let number = eventsFunctionContext.getArgument(\"LayerNumber\")",
+            "const layers = runtimeScene._layers.items",
+            "for (const layer in layers) {",
+            "    let check = gdjs.PaperEngine.getLayerType(layer) == type &&",
+            "                gdjs.PaperEngine.getLayerNumber(layer) == number",
+            "                ",
+            "    if (check) {",
+            "        obj.setLayer(layer)",
+            "    }",
+            "}",
+            "",
+            ""
+          ],
+          "parameterObjects": "Object",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "PaperEngine::setOffset"
+              },
+              "parameters": [
+                "",
+                "Object",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "Object",
+          "name": "Object",
+          "type": "objectList"
+        },
+        {
+          "description": "Layer number",
+          "name": "LayerNumber",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "name": "setObjectSkew",
+      "private": true,
+      "sentence": "update _PARAM1_ Skew",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetAngle"
+              },
+              "parameters": [
+                "Object",
+                "=",
+                "CameraAngle()"
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 254,
+          "colorG": 19,
+          "colorR": 144,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Core javascript",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::JsCode",
+              "inlineCode": [
+                "let object = objects[0]",
+                "let pixiObject = object.getRendererObject()",
+                "let angle = object.getVariables().get(\"angle\").getValue()",
+                "pixiObject.skew.y = gdjs.PaperEngine.getSkew(angle)"
+              ],
+              "parameterObjects": "Object",
+              "useStrict": true,
+              "eventsSheetExpanded": false
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreAutourPos"
+              },
+              "parameters": [
+                "Object",
+                "Object.Variable(x)+Object.Variable(offsetX)",
+                "Object.Variable(y)+Object.Variable(offsetY)",
+                "-(Object.Height()/2+(Object.Variable(z)+Object.Variable(offsetZ) )*1.5)",
+                "CameraAngle()+90"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": [
+        {
+          "description": "Object",
+          "name": "Object",
+          "type": "objectList"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
       "description": "Set Object Offset",
       "fullName": "Set Object Offset",
       "functionType": "Action",
-      "name": "SetOffset",
+      "name": "setOffset",
       "private": true,
       "sentence": "Set _PARAM1_ Offset",
       "events": [
@@ -447,6 +978,46 @@
         {
           "description": "",
           "name": "Object",
+          "type": "objectList"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Get distance beteween Paper Objects",
+      "fullName": "Get distance beteween Paper Objects",
+      "functionType": "Expression",
+      "group": "Object",
+      "name": "getDistance",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "let obj = eventsFunctionContext.getObjects(\"Object1\")[0].getVariables()",
+            "let obj2 = eventsFunctionContext.getObjects(\"Object2\")[0].getVariables()",
+            "",
+            "eventsFunctionContext.returnValue = gdjs.PaperEngine.getDistance(",
+            "    obj.get(\"x\").getAsNumber(), obj.get(\"y\").getAsNumber(),",
+            "    obj2.get(\"x\").getAsNumber(), obj2.get(\"y\").getAsNumber())"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": true
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
+      "parameters": [
+        {
+          "description": "Object 1",
+          "name": "Object1",
+          "type": "objectList"
+        },
+        {
+          "description": "Object 2",
+          "name": "Object2",
           "type": "objectList"
         }
       ],
@@ -793,67 +1364,6 @@
       "objectGroups": []
     },
     {
-      "description": "Set object to a layer. (By number)",
-      "fullName": "Set object layer by number",
-      "functionType": "Action",
-      "group": "Object",
-      "name": "setObjectLayerNumber",
-      "sentence": "Set object: _PARAM1_ to layer number: _PARAM2_ ",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "let obj = objects[0]",
-            "let type = gdjs.PaperEngine.getLayerType(obj.getLayer())",
-            "let number = eventsFunctionContext.getArgument(\"LayerNumber\")",
-            "const layers = runtimeScene._layers.items",
-            "for (const layer in layers) {",
-            "    let check = gdjs.PaperEngine.getLayerType(layer) == type &&",
-            "                gdjs.PaperEngine.getLayerNumber(layer) == number",
-            "                ",
-            "    if (check) {",
-            "        obj.setLayer(layer)",
-            "    }",
-            "}",
-            "",
-            ""
-          ],
-          "parameterObjects": "Object",
-          "useStrict": true,
-          "eventsSheetExpanded": true
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "PaperEngine::SetOffset"
-              },
-              "parameters": [
-                "",
-                "Object",
-                ""
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": [
-        {
-          "description": "Object",
-          "name": "Object",
-          "type": "objectList"
-        },
-        {
-          "description": "Layer number",
-          "name": "LayerNumber",
-          "type": "expression"
-        }
-      ],
-      "objectGroups": []
-    },
-    {
       "description": "Normalize layer to non 3D scale",
       "fullName": "Normalize Layer to non 3D scale",
       "functionType": "Action",
@@ -1006,122 +1516,6 @@
       "objectGroups": []
     },
     {
-      "fullName": "",
-      "functionType": "Action",
-      "name": "setObjectSkew",
-      "private": true,
-      "sentence": "update _PARAM1_ Skew",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "SetAngle"
-              },
-              "parameters": [
-                "Object",
-                "=",
-                "CameraAngle()"
-              ]
-            }
-          ]
-        },
-        {
-          "colorB": 254,
-          "colorG": 19,
-          "colorR": 144,
-          "creationTime": 0,
-          "folded": true,
-          "name": "Core javascript",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::JsCode",
-              "inlineCode": [
-                "let object = objects[0]",
-                "let pixiObject = object.getRendererObject()",
-                "let angle = object.getVariables().get(\"angle\").getValue()",
-                "pixiObject.skew.y = gdjs.PaperEngine.getSkew(angle)"
-              ],
-              "parameterObjects": "Object",
-              "useStrict": true,
-              "eventsSheetExpanded": false
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": [
-            {
-              "type": {
-                "value": "MettreAutourPos"
-              },
-              "parameters": [
-                "Object",
-                "Object.Variable(x)+Object.Variable(offsetX)",
-                "Object.Variable(y)+Object.Variable(offsetY)",
-                "-(Object.Height()/2+(Object.Variable(z)+Object.Variable(offsetZ) )*1.5)",
-                "CameraAngle()+90"
-              ]
-            }
-          ]
-        }
-      ],
-      "parameters": [
-        {
-          "description": "Object",
-          "name": "Object",
-          "type": "objectList"
-        }
-      ],
-      "objectGroups": []
-    },
-    {
-      "description": "Get distance beteween Paper Objects",
-      "fullName": "Get distance beteween Paper Objects",
-      "functionType": "Expression",
-      "group": "Object",
-      "name": "getDistance",
-      "sentence": "",
-      "events": [
-        {
-          "type": "BuiltinCommonInstructions::JsCode",
-          "inlineCode": [
-            "let obj = eventsFunctionContext.getObjects(\"Object1\")[0].getVariables()",
-            "let obj2 = eventsFunctionContext.getObjects(\"Object2\")[0].getVariables()",
-            "",
-            "eventsFunctionContext.returnValue = gdjs.PaperEngine.getDistance(",
-            "    obj.get(\"x\").getAsNumber(), obj.get(\"y\").getAsNumber(),",
-            "    obj2.get(\"x\").getAsNumber(), obj2.get(\"y\").getAsNumber())"
-          ],
-          "parameterObjects": "",
-          "useStrict": true,
-          "eventsSheetExpanded": true
-        }
-      ],
-      "expressionType": {
-        "type": "expression"
-      },
-      "parameters": [
-        {
-          "description": "Object 1",
-          "name": "Object1",
-          "type": "objectList"
-        },
-        {
-          "description": "Object 2",
-          "name": "Object2",
-          "type": "objectList"
-        }
-      ],
-      "objectGroups": []
-    },
-    {
       "description": "Follow base layer",
       "fullName": "Follow base layer",
       "functionType": "Action",
@@ -1267,7 +1661,7 @@
                     },
                     {
                       "type": {
-                        "value": "PaperEngine::SetOffset"
+                        "value": "PaperEngine::setOffset"
                       },
                       "parameters": [
                         "",
@@ -1436,6 +1830,7 @@
           "fullName": "Update position",
           "functionType": "Action",
           "name": "updatePosition",
+          "private": true,
           "sentence": "Update position _PARAM0_",
           "events": [
             {
@@ -1496,6 +1891,167 @@
             }
           ],
           "objectGroups": []
+        },
+        {
+          "description": "Set object position. The point of origin is at the center bottom",
+          "fullName": "Set object position",
+          "functionType": "Action",
+          "group": "Paper Engine",
+          "name": "setPosition",
+          "sentence": "Set _PARAM0_ position X:_PARAM2_ Y:_PARAM3_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::setPosition"
+                  },
+                  "parameters": [
+                    "",
+                    "Object",
+                    "GetArgumentAsNumber(\"X\")",
+                    "GetArgumentAsNumber(\"Y\")",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "Sprite",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "PaperEngine::Project",
+              "type": "behavior"
+            },
+            {
+              "description": "X position",
+              "name": "X",
+              "type": "expression"
+            },
+            {
+              "description": "Y position",
+              "name": "Y",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the variable angle from object to update the angle",
+          "fullName": "Set object angle",
+          "functionType": "Action",
+          "group": "Paper Engine",
+          "name": "setAngle",
+          "sentence": "Set _PARAM0_ angle:_PARAM2_ _PARAM3_ ",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::setAngle"
+                  },
+                  "parameters": [
+                    "",
+                    "Object",
+                    "GetArgumentAsString(\"Operator\")",
+                    "GetArgumentAsNumber(\"Angle\")",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "Sprite",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "PaperEngine::Project",
+              "type": "behavior"
+            },
+            {
+              "description": "Operator",
+              "name": "Operator",
+              "supplementaryInformation": "[\"=\",\"+\",\"-\",\"*\",\"/\"]",
+              "type": "stringWithSelector"
+            },
+            {
+              "description": "Angle",
+              "name": "Angle",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the variable z from object to update the Z axis value",
+          "fullName": "Set object Z axis value",
+          "functionType": "Action",
+          "group": "Paper Engine",
+          "name": "setZ",
+          "sentence": "Set _PARAM0_ Z:_PARAM2_ _PARAM3_ ",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::setZ"
+                  },
+                  "parameters": [
+                    "",
+                    "Object",
+                    "GetArgumentAsString(\"Operator\")",
+                    "GetArgumentAsNumber(\"Z\")",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "supplementaryInformation": "Sprite",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "PaperEngine::Project",
+              "type": "behavior"
+            },
+            {
+              "description": "Operator",
+              "name": "Operator",
+              "supplementaryInformation": "[\"=\",\"+\",\"-\",\"*\",\"/\"]",
+              "type": "stringWithSelector"
+            },
+            {
+              "description": "Angle",
+              "name": "Z",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
         }
       ],
       "propertyDescriptors": [
@@ -1530,12 +2086,12 @@
       "fullName": "",
       "name": "Wall",
       "objectType": "Sprite",
-      "private": true,
       "eventsFunctions": [
         {
           "description": "Set object to mirror a texture, and set a width (px)",
           "fullName": "Set mirror texture",
           "functionType": "Action",
+          "group": "Paper Engine",
           "name": "setMirrorTexture",
           "sentence": "Set object: _PARAM0_ to mirror texture: _PARAM2_ with width: _PARAM4_",
           "events": [
@@ -2414,6 +2970,7 @@
       "fullName": "Sort object by XY",
       "name": "XYSort",
       "objectType": "",
+      "private": true,
       "eventsFunctions": [
         {
           "fullName": "",
@@ -2535,7 +3092,7 @@
               ],
               "parameterObjects": "Object",
               "useStrict": true,
-              "eventsSheetExpanded": true
+              "eventsSheetExpanded": false
             }
           ],
           "parameters": [
@@ -2589,7 +3146,7 @@
               "actions": [
                 {
                   "type": {
-                    "value": "PaperEngine::SetOffset"
+                    "value": "PaperEngine::setOffset"
                   },
                   "parameters": [
                     "",
@@ -2657,7 +3214,7 @@
               "actions": [
                 {
                   "type": {
-                    "value": "PaperEngine::SetOffset"
+                    "value": "PaperEngine::setOffset"
                   },
                   "parameters": [
                     "",
@@ -2691,6 +3248,164 @@
               "name": "Behavior",
               "supplementaryInformation": "PaperEngine::ProjectTile",
               "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Set object position. The point of origin is at the center bottom",
+          "fullName": "Set object position",
+          "functionType": "Action",
+          "group": "Paper Engine",
+          "name": "setPosition",
+          "sentence": "Set _PARAM0_ position X:_PARAM2_ Y:_PARAM3_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::setPosition"
+                  },
+                  "parameters": [
+                    "",
+                    "Object",
+                    "GetArgumentAsNumber(\"X\")",
+                    "GetArgumentAsNumber(\"Y\")",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "PaperEngine::ProjectTile",
+              "type": "behavior"
+            },
+            {
+              "description": "X position",
+              "name": "X",
+              "type": "expression"
+            },
+            {
+              "description": "Y position",
+              "name": "Y",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the variable angle from object to update the angle",
+          "fullName": "Set object angle",
+          "functionType": "Action",
+          "group": "Paper Engine",
+          "name": "setAngle",
+          "sentence": "Set _PARAM0_ angle:_PARAM2_ _PARAM3_ ",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::setAngle"
+                  },
+                  "parameters": [
+                    "",
+                    "Object",
+                    "GetArgumentAsString(\"Operator\")",
+                    "GetArgumentAsNumber(\"Angle\")",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "PaperEngine::ProjectTile",
+              "type": "behavior"
+            },
+            {
+              "description": "Operator",
+              "name": "Operator",
+              "supplementaryInformation": "[\"=\",\"+\",\"-\",\"*\",\"/\"]",
+              "type": "stringWithSelector"
+            },
+            {
+              "description": "Angle",
+              "name": "Angle",
+              "type": "expression"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Change the variable z from object to update the Z axis value",
+          "fullName": "Set object Z axis value",
+          "functionType": "Action",
+          "group": "Paper Engine",
+          "name": "setZ",
+          "sentence": "Set _PARAM0_ Z:_PARAM2_ _PARAM3_ ",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::setZ"
+                  },
+                  "parameters": [
+                    "",
+                    "Object",
+                    "GetArgumentAsString(\"Operator\")",
+                    "GetArgumentAsNumber(\"Z\")",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "PaperEngine::ProjectTile",
+              "type": "behavior"
+            },
+            {
+              "description": "Operator",
+              "name": "Operator",
+              "supplementaryInformation": "[\"=\",\"+\",\"-\",\"*\",\"/\"]",
+              "type": "stringWithSelector"
+            },
+            {
+              "description": "Z",
+              "name": "Z",
+              "type": "expression"
             }
           ],
           "objectGroups": []

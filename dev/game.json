@@ -1528,6 +1528,15 @@
         "name": "assets\\duck\\63.png",
         "smoothed": false,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/wallPlacer.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "wallPlacer",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []

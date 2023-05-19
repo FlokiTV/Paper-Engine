@@ -11,14 +11,14 @@
   "uiSettings": {
     "grid": true,
     "gridType": "rectangular",
-    "gridWidth": 16,
-    "gridHeight": 16,
+    "gridWidth": 128,
+    "gridHeight": 128,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 1.026942587498119,
+    "zoomFactor": 0.4194339782759113,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1880,6 +1880,36 @@
       "x": 320,
       "y": 816,
       "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 304,
+      "customSize": true,
+      "height": 128,
+      "layer": "",
+      "name": "wallPlacer",
+      "persistentUuid": "44042c45-510d-4eb2-9f6d-5eeb37a31c1b",
+      "width": 512,
+      "x": 60,
+      "y": 1208,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 128,
+      "layer": "",
+      "name": "wallPlacer",
+      "persistentUuid": "59d1bdd7-918f-49c9-bac2-c9cba9dcdd72",
+      "width": 512,
+      "x": 0,
+      "y": 1024,
+      "zOrder": 35,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -4930,6 +4960,53 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "wallPlacer",
+      "tags": "",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "Wall",
+          "type": "PaperEngine::Wall"
+        }
+      ],
+      "animations": [
+        {
+          "name": "wallPlacer",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "wallPlacer",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "events": [
@@ -5018,45 +5095,12 @@
         },
         {
           "type": {
-            "value": "ModVarObjet"
-          },
-          "parameters": [
-            "mob",
-            "x",
-            "=",
-            "camera.X()"
-          ]
-        },
-        {
-          "type": {
-            "value": "ModVarObjet"
-          },
-          "parameters": [
-            "mob",
-            "y",
-            "=",
-            "camera.Y()"
-          ]
-        },
-        {
-          "type": {
             "value": "SeparateFromObjects"
           },
           "parameters": [
             "camera",
             "collider",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ModVarObjet"
-          },
-          "parameters": [
-            "logo",
-            "angle",
-            "+",
-            "1"
           ]
         },
         {
@@ -5107,6 +5151,63 @@
           },
           "parameters": [
             "collider"
+          ]
+        },
+        {
+          "type": {
+            "value": "PaperEngine::Project::setAngle"
+          },
+          "parameters": [
+            "logo",
+            "Project",
+            "\"+\"",
+            "1",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PaperEngine::Project::setZ"
+          },
+          "parameters": [
+            "logo",
+            "Project",
+            "\"=\"",
+            "10",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PaperEngine::Project::setPosition"
+          },
+          "parameters": [
+            "mob",
+            "Project",
+            "camera.X()",
+            "camera.Y()",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PaperEngine::Wall::setMirrorTexture"
+          },
+          "parameters": [
+            "wallPlacer",
+            "Wall",
+            "wall2",
+            "Project",
+            "\"128\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "wallPlacer"
           ]
         }
       ]
@@ -5604,9 +5705,14 @@
       "ambientLightColorB": 150995058,
       "ambientLightColorG": 6069792,
       "ambientLightColorR": 9234912,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "Floor",
+      "renderingType": "",
       "visibility": true,
       "cameras": [],
       "effects": []
@@ -5615,9 +5721,14 @@
       "ambientLightColorB": 0,
       "ambientLightColorG": 10574688,
       "ambientLightColorR": 16,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "",
+      "renderingType": "",
       "visibility": true,
       "cameras": [
         {
@@ -5637,9 +5748,14 @@
       "ambientLightColorB": 150995058,
       "ambientLightColorG": 6069792,
       "ambientLightColorR": 9234912,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "Layer",
+      "renderingType": "",
       "visibility": true,
       "cameras": [],
       "effects": []
@@ -5648,9 +5764,14 @@
       "ambientLightColorB": 14388192,
       "ambientLightColorG": 6069792,
       "ambientLightColorR": 14387776,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 0.1,
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
+      "isLocked": false,
       "name": "UI",
+      "renderingType": "",
       "visibility": true,
       "cameras": [],
       "effects": []
@@ -5664,6 +5785,10 @@
     {
       "name": "ProjectPreRenderSprite",
       "type": "PaperEngine::ProjectPreRenderSprite"
+    },
+    {
+      "name": "Wall",
+      "type": "PaperEngine::Wall"
     },
     {
       "name": "XYSort",

@@ -37,7 +37,7 @@ Projecting a sprite will make it scale normalized and behave like a wall. As you
 
 When set to follow the camera angle, your projected sprite will always face the camera. Useful for creating characters with the "billboard" effect.
 
-The point of origin of the tile is at the **center bottom**
+The point of origin of the plane is at the **center bottom**
 
 #### Collisions 
 By changing the scale and skew of the object and rotating the camera, we lose the object's 2D collision from the initial position.
