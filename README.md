@@ -43,3 +43,8 @@ The point of origin of the plane is at the **center bottom**
 By changing the scale and skew of the object and rotating the camera, we lose the object's 2D collision from the initial position.
 
 To get around this, we can create a separate object just to be the collision and put at the bottom of the walls
+
+## Templates
+
+### Top Down Template
+[download the template](https://github.com/FlokiTV/Paper-Engine/raw/main/TopDownTemplate.zip).
