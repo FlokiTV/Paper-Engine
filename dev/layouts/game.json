@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.4194339782759113,
+    "zoomFactor": 0.2090255622833548,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -5208,6 +5208,32 @@
           },
           "parameters": [
             "wallPlacer"
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "BuiltinExternalLayouts::CreateObjectsFromExternalLayout"
+              },
+              "parameters": [
+                "",
+                "\"externalTeste\"",
+                "300",
+                "300"
+              ]
+            }
           ]
         }
       ]

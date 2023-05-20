@@ -1,0 +1,22 @@
+{
+  "associatedLayout": "game",
+  "name": "externalTeste",
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "height": 32,
+      "layer": "",
+      "name": "coin",
+      "persistentUuid": "ec5d3eee-30bd-4883-a5a2-90bf494fca94",
+      "width": 32,
+      "x": 96,
+      "y": 144,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "editionSettings": {}
+}

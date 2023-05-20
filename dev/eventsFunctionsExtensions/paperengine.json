@@ -8,7 +8,7 @@
   "name": "PaperEngine",
   "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/70ce666b63361390263144d920b3a5c1ae3972b9a64de7dd4add9ae62f25d68d_note-multiple-outline.svg",
   "shortDescription": "Paper Engine",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Paper Engine",
   "tags": [
     "paper",
@@ -124,8 +124,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "Camera Scale",
-          "comment2": ""
+          "comment": "Camera Scale"
         },
         {
           "type": "BuiltinCommonInstructions::JsCode",
@@ -2341,8 +2340,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "",
-                      "comment2": ""
+                      "comment": ""
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -3503,6 +3501,422 @@
           "extraInformation": [],
           "hidden": false,
           "name": "Sides"
+        }
+      ],
+      "sharedPropertyDescriptors": []
+    },
+    {
+      "description": "Simple Top Down Behavior based on camera angle",
+      "fullName": "Top Down Behavior",
+      "name": "TopDown",
+      "objectType": "",
+      "eventsFunctions": [
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "doStepPreEvents",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::TopDown::SetPropertyUp"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PaperEngine::TopDown::SetPropertyDown"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PaperEngine::TopDown::SetPropertyLeft"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "PaperEngine::TopDown::SetPropertyRight"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "PaperEngine::TopDown",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "doStepPostEvents",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::TopDown::PropertyUp"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "Object",
+                    "CameraAngle()-90",
+                    "Object.Behavior::PropertySpeed()",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::TopDown::PropertyDown"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "Object",
+                    "CameraAngle()+90",
+                    "Object.Behavior::PropertySpeed()",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::TopDown::PropertyLeft"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "Object",
+                    "CameraAngle()+180",
+                    "Object.Behavior::PropertySpeed()",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::TopDown::PropertyRight"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AddForceAL"
+                  },
+                  "parameters": [
+                    "Object",
+                    "CameraAngle()",
+                    "Object.Behavior::PropertySpeed()",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "PaperEngine::TopDown",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Simulate Up",
+          "fullName": "Simulate Up",
+          "functionType": "Action",
+          "name": "SimulateUP",
+          "sentence": "Simulate Up _PARAM0_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::TopDown::SetPropertyUp"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "PaperEngine::TopDown",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Simulate Down",
+          "fullName": "Simulate Down",
+          "functionType": "Action",
+          "name": "SimulateDown",
+          "sentence": "Simulate Down _PARAM0_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::TopDown::SetPropertyDown"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "PaperEngine::TopDown",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Simulate Left",
+          "fullName": "Simulate Left",
+          "functionType": "Action",
+          "name": "SimulateLeft",
+          "sentence": "Simulate Left _PARAM0_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::TopDown::SetPropertyLeft"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "PaperEngine::TopDown",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        },
+        {
+          "description": "Simulate Right",
+          "fullName": "Simulate Right",
+          "functionType": "Action",
+          "name": "SimulateRight",
+          "sentence": "Simulate Right _PARAM0_",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PaperEngine::TopDown::SetPropertyRight"
+                  },
+                  "parameters": [
+                    "Object",
+                    "Behavior",
+                    "yes"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "PaperEngine::TopDown",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "propertyDescriptors": [
+        {
+          "value": "",
+          "type": "Boolean",
+          "label": "",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": true,
+          "name": "Up"
+        },
+        {
+          "value": "",
+          "type": "Boolean",
+          "label": "",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": true,
+          "name": "Right"
+        },
+        {
+          "value": "",
+          "type": "Boolean",
+          "label": "",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": true,
+          "name": "Down"
+        },
+        {
+          "value": "",
+          "type": "Boolean",
+          "label": "",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": true,
+          "name": "Left"
+        },
+        {
+          "value": "200",
+          "type": "Number",
+          "unit": "PixelSpeed",
+          "label": "",
+          "description": "",
+          "group": "",
+          "extraInformation": [],
+          "hidden": false,
+          "name": "Speed"
         }
       ],
       "sharedPropertyDescriptors": []
